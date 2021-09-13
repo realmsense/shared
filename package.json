@@ -1,0 +1,23 @@
+{
+    "name": "@realmsense/shared-types",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc --build",
+        "lint": "eslint src --ext ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://git.extacy.cc/realmsense/shared-types"
+    },
+    "author": "Extacy",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^16.3.2",
+        "@typescript-eslint/eslint-plugin": "^4.28.3",
+        "@typescript-eslint/parser": "^4.28.3",
+        "eslint": "^7.30.0"
+    }
+}
