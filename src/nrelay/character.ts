@@ -1,5 +1,10 @@
+import { IServer } from "..";
+
 export interface ICharacter {
     objectType: number;
+    server: IServer;
+    location: string;
+    
     level: number;
     exp: number;
     nextLevelExp: number;
