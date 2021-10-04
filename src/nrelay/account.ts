@@ -2,7 +2,6 @@ import { GuildRank } from "..";
 
 export interface IAccount {
     playerID: number;
-    updatedTime: Date;
 
     nameChosen: boolean;
     name: string;
