@@ -74,3 +74,23 @@ export const Servers: IServer[] = [
         "address": "13.236.87.250"
     }
 ];
+
+/**
+ * Attempts to return an `IServer` object from the search string.
+ * @param serverName The server's full name or an an alias (e.g. `USWest3` or `usw3`). Case insensitive
+ */
+export function ParseServerName(serverName: string): IServer | undefined {
+    for (const server of Servers) {
+        // If full servername is provided (e.g. "USWest3")
+        if (server.name.toLowerCase() == serverName.toLowerCase()) {
+            return server;
+        }
+
+        // Try aliases
+        const pattern = /[A-Z0-9]+/; // Capture capital letters and numbers. USWest3 -> ["USW", "3"]
+        const alias = serverName.match(pattern)?.join("");
+        if (alias?.toLowerCase() == serverName.toLowerCase()) {
+            return server;
+        }
+    }
+}
