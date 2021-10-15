@@ -2,6 +2,7 @@ import { IServer } from "..";
 
 export interface ICharacter {
     objectType: number;
+    updatedTime: number;
     server: IServer;
     location: string;
     
