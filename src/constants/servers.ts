@@ -93,4 +93,5 @@ export function ParseServerName(serverName: string): IServer | undefined {
             return server;
         }
     }
+    return undefined;
 }
