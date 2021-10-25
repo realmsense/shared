@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc --build",
         "lint": "eslint src --ext ts",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "index": "tsai --overwrite --double --exclude ./src/constants --path ./src"
     },
     "repository": {
         "type": "git",
@@ -15,10 +15,15 @@
     "author": "Extacy",
     "license": "MIT",
     "devDependencies": {
+        "@nestjs/typeorm": "^8.0.2",
         "@types/node": "^16.3.2",
         "@typescript-eslint/eslint-plugin": "^4.28.3",
         "@typescript-eslint/parser": "^4.28.3",
         "discord-api-types": "^0.24.0",
-        "eslint": "^7.30.0"
+        "eslint": "^7.30.0",
+        "typeorm": "^0.2.38"
+    },
+    "dependencies": {
+        "dotenv": "^8.6.0"
     }
 }
