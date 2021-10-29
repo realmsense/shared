@@ -1,15 +1,17 @@
 import * as dotenv from "dotenv";
-import { ISecrets } from "./secrets.model";
+import { IEnvironment } from "./environment.model";
 
 dotenv.config();
 
-declare const process: {
-    env: {
-        [key: string]: string;
-    }
-};
+export const ENV: IEnvironment = {
 
-export const Secret: ISecrets = {
+    Production: parseBool(process.env.PRODUCTION),
+    
+    URL: {
+        API    : process.env.API_URL,
+        Website: process.env.WEBSITE_URL
+    },
+
     Discord: {
         ClientID    : process.env.DISCORD_CLIENTID,
         ClientSecret: process.env.DISCORD_CLIENTSECRET,
@@ -39,3 +41,9 @@ export const Secret: ISecrets = {
 function parseBool(string: string): boolean {
     return string === "true";
 }
+
+declare const process: {
+    env: {
+        [key: string]: string;
+    }
+};

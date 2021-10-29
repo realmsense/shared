@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc --build",
         "lint": "eslint src --ext ts",
-        "index": "tsai --overwrite --double --exclude ./src/constants --path ./src"
+        "index": "tsai --overwrite --double --path ./src"
     },
     "repository": {
         "type": "git",

@@ -1,6 +1,13 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 
-export interface ISecrets {
+export interface IEnvironment {
+    Production: boolean;
+
+    URL: {
+        API    : string;
+        Website: string;
+    }
+
     Discord: {
         ClientID    : string;
         ClientSecret: string;
