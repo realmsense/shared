@@ -6,8 +6,8 @@ export const ENV: IEnvironment = {
     Production: parseBool(process.env.PRODUCTION),
     
     URL: {
-        API    : process.env.API_URL,
-        Website: process.env.WEBSITE_URL
+        API    : process.env.HTTP + process.env.API_URL,
+        Website: process.env.HTTP + process.env.WEBSITE_URL
     },
 
     Discord: {
