@@ -1,7 +1,5 @@
-import * as dotenv from "dotenv";
+import { } from "dotenv/config";
 import { IEnvironment } from "./environment.model";
-
-dotenv.config();
 
 export const ENV: IEnvironment = {
 
