@@ -25,6 +25,15 @@ CF_ZONE_API_TOKEN=          # API token with Zone.Zone:Read permission
 ACME_EMAIL=                 # Email address to receive notifications from Lets Encrypt
 TRAEFIK_DASHBOARD_AUTH=     # htpasswd -nB username
 
+# JWT
+JWT_SECRET=                 # Random password string
+JWT_EXPIRATION=             # in seconds
+
+# Authkey
+AUTHKEY_REALMS=             # Key for protected routes
+AUTHKEY_PLAYERS=            # Key for protected routes
+AUTHKEY_DISCORD=            # Key for protected routes
+
 # Discord
 DISCORD_CLIENTID=           # OAuth2 Client ID
 DISCORD_CLIENTSECRET=       # OAuth2 Client Secret

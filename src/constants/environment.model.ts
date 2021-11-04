@@ -9,6 +9,17 @@ export function _GetEnvObject(): IEnvironment {
             Website: process.env.HTTP + process.env.WEBSITE_URL
         },
     
+        JWT: {
+            Secret: process.env.JWT_SECRET,
+            Expiration: parseInt(process.env.JWT_EXPIRATION)
+        },
+    
+        Authkey: {
+            Realms: process.env.AUTHKEY_REALMS,
+            Players: process.env.AUTHKEY_PLAYERS,
+            Discord: process.env.AUTHKEY_DISCORD
+        },
+
         Discord: {
             ClientID    : process.env.DISCORD_CLIENTID,
             ClientSecret: process.env.DISCORD_CLIENTSECRET,
@@ -52,6 +63,17 @@ export interface IEnvironment {
         API    : string;
         Website: string;
     }
+
+    JWT: {
+        Secret: string;
+        Expiration: number;
+    },
+
+    Authkey: {
+        Realms: string;
+        Players: string;
+        Discord: string;
+    },
 
     Discord: {
         ClientID    : string;
