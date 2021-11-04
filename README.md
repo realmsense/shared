@@ -10,27 +10,38 @@ This repository contains interfaces that are shared between multiple services, i
 
 `.env`
 ```dotenv
-PRODUICTION=bool
+PRODUCTION=                 # boolean
 
 # URL
-API_URL=string
-WEBSITE_URL=string
+HTTP=                       # "https://" or "http://"
+API_URL=                    # "api.realmsense.cc"
+WEBSITE_URL=                # "realmsense.cc"
+PMA_URL=                    # "pma.realmsense.cc"
+TRAEFIK_URL=                # "traefik.realmsense.cc"
+
+# Traefik
+CF_DNS_API_TOKEN=           # API token with Zone.DNS:Edit permission
+CF_ZONE_API_TOKEN=          # API token with Zone.Zone:Read permission
+ACME_EMAIL=                 # Email address to receive notifications from Lets Encrypt
+TRAEFIK_DASHBOARD_AUTH=     # htpasswd -nB username
 
 # Discord
-DISCORD_CLIENTID=string
-DISCORD_CLIENTSECRET=string
-DISCORD_REDIRECTURI=string
+DISCORD_CLIENTID=           # OAuth2 Client ID
+DISCORD_CLIENTSECRET=       # OAuth2 Client Secret
+DISCORD_REDIRECTURI=        # OAuth2 Redirect URL
 
 # Database
-DB_DEFAULT=string
-DB_TRACKER=string
-DB_CUSTOMERS=string
+DB_DEFAULT=                 # "rs_default"
+DB_TRACKER=                 # "rs_tracker"
+DB_CUSTOMERS=               # "rs_customers"
 
-DB_HOST=string
-DB_PORT=number
-DB_USERNAME=string
-DB_PASSWORD=string
+DB_HOST=                    # "database"
+DB_PORT=                    # "3306"
+DB_USERNAME=
+DB_PASSWORD=
+DB_ROOT_PASSWORD=
 
-DB_SYNCHRONIZE=string
-DB_LOGGING=bool
+DB_MIGRATIONS=              # boolean - should DB Migrations be auto run on start
+DB_SYNCHRONIZE=             # boolean - force synchronize database with local entities. DO NOT enable in Production!!
+DB_LOGGING=                 # boolean - enable logging of SQL commands
 ```

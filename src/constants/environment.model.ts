@@ -28,9 +28,14 @@ export function _GetEnvObject(): IEnvironment {
                 username   : process.env.DB_USERNAME,
                 password   : process.env.DB_PASSWORD,
                 database   : process.env.DB_DEFAULT,
-                entities   : ["dist/src/**/*.entity{.ts,.js}"],
+                entities   : ["dist/src/**/*.entity.js"],
+                migrations : ["dist/src/migrations/*.js"],
+                migrationsRun: parseBool(process.env.DB_MIGRATIONS),
                 synchronize: parseBool(process.env.DB_SYNCHRONIZE),
                 logging    : parseBool(process.env.DB_LOGGING),
+                cli: {
+                    migrationsDir: "src/migrations"
+                }
             }
         }
     };
