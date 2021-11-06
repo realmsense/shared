@@ -35,6 +35,7 @@ AUTHKEY_PLAYERS=            # Key for protected routes
 AUTHKEY_DISCORD=            # Key for protected routes
 
 # Discord
+DISCORD_INVITE=             # Discord invite link
 DISCORD_CLIENTID=           # OAuth2 Client ID
 DISCORD_CLIENTSECRET=       # OAuth2 Client Secret
 DISCORD_REDIRECTURI=        # OAuth2 Redirect URL

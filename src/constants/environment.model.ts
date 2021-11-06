@@ -21,6 +21,7 @@ export function _GetEnvObject(): IEnvironment {
         },
 
         Discord: {
+            InviteLink  : process.env.DISCORD_INVITE,
             ClientID    : process.env.DISCORD_CLIENTID,
             ClientSecret: process.env.DISCORD_CLIENTSECRET,
             RedirectURI : process.env.DISCORD_REDIRECTURI,
@@ -76,6 +77,7 @@ export interface IEnvironment {
     },
 
     Discord: {
+        InviteLink  : string;
         ClientID    : string;
         ClientSecret: string;
         RedirectURI : string;
