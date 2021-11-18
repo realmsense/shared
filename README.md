@@ -16,6 +16,8 @@ PRODUCTION=                 # boolean
 HTTP=                       # "https://" or "http://"
 API_URL=                    # "api.realmsense.cc"
 WEBSITE_URL=                # "realmsense.cc"
+UPDATE_URL=                 # "rotmg.extacy.cc"
+UPDATE_PATH=                # "/production/client/current"
 PMA_URL=                    # "pma.realmsense.cc"
 TRAEFIK_URL=                # "traefik.realmsense.cc"
 
