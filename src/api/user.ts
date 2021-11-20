@@ -3,7 +3,7 @@ import { IDiscordLink } from "./discord-link";
 
 export interface IUser {
     id: number;
-    email: string;
+    email?: string;
     discordLink?: IDiscordLink;
     username: string;
     password: string;
