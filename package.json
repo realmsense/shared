@@ -1,8 +1,8 @@
 {
-    "name": "@realmsense/shared-types",
+    "name": "@realmsense/shared",
     "version": "1.0.0",
     "description": "",
-    "main": "dist/main.js",
+    "main": "dist/src/main.js",
     "scripts": {
         "build": "tsc --build",
         "lint": "eslint src --ext ts",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://git.extacy.cc/realmsense/shared-types"
+        "url": "git+https://git.extacy.cc/realmsense/shared"
     },
     "author": "Extacy",
     "license": "MIT",
