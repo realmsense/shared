@@ -26,8 +26,14 @@ export function _GetEnvObject(): IEnvironment {
             ClientID    : process.env.DISCORD_CLIENTID,
             ClientSecret: process.env.DISCORD_CLIENTSECRET,
             RedirectURI : process.env.DISCORD_REDIRECTURI,
+            BotToken    : process.env.DISCORD_BOT_TOKEN,
         },
     
+        RaidTracker: {
+            ChannelID: process.env.RAID_TRACKER_CHANNEL,
+            SelfBotToken: process.env.RAID_TRACKER_SELFBOT_TOKEN,
+        },
+
         Database: {
             db: {
                 Default  : process.env.DB_DEFAULT,
@@ -83,8 +89,14 @@ export interface IEnvironment {
         ClientID    : string;
         ClientSecret: string;
         RedirectURI : string;
+        BotToken    : string;
     },
     
+    RaidTracker: {
+        ChannelID: string;
+        SelfBotToken: string;
+    }
+
     Database: {
         db: {
             Default  : string;

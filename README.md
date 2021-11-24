@@ -41,6 +41,10 @@ DISCORD_INVITE=             # Discord invite link
 DISCORD_CLIENTID=           # OAuth2 Client ID
 DISCORD_CLIENTSECRET=       # OAuth2 Client Secret
 DISCORD_REDIRECTURI=        # OAuth2 Redirect URL
+DISCORD_BOT_TOKEN=          # Discord Bot Token
+
+# Raid Tracker
+RAID_TRACKER_SELFBOT_TOKEN= # Self Bot token used o track Discord runs
 
 # Database
 DB_DEFAULT=                 # "rs_default"
