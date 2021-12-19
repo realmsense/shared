@@ -1,4 +1,4 @@
 import { _GetEnvObject } from "./environment.model";
 
-const ENV = _GetEnvObject();
-export { ENV };
+const ENV2 = _GetEnvObject();
+export { ENV2 };
