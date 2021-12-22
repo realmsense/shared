@@ -16,10 +16,14 @@ PRODUCTION=                 # boolean
 HTTP=                       # "https://" or "http://"
 API_URL=                    # "api.realmsense.cc"
 WEBSITE_URL=                # "realmsense.cc"
-UPDATE_URL=                 # "rotmg.extacy.cc"
-UPDATE_PATH=                # "/production/client/current"
+EXTRACTOR_URL=              # "rotmg.extacy.cc"
 PMA_URL=                    # "pma.realmsense.cc"
 TRAEFIK_URL=                # "traefik.realmsense.cc"
+
+# Extractor
+EXTRACTOR_UPDATE_PATH=      # "/production/client/current"
+EXTRACTOR_WEBHOOK_URL=      # Discord webhook URL
+EXTRACTOR_WEBHOOK_MESSAGE=  # "<@&848528094918737931>"
 
 # Traefik
 CF_DNS_API_TOKEN=           # API token with Zone.DNS:Edit permission

@@ -7,7 +7,7 @@ export function _GetEnvObject(): IEnvironment {
         URL: {
             API    : process.env.HTTP + process.env.API_URL,
             Website: process.env.HTTP + process.env.WEBSITE_URL,
-            Updater: process.env.HTTP + process.env.UPDATE_URL + process.env.UPDATE_PATH,
+            Updater: process.env.HTTP + process.env.EXTRACTOR_URL + process.env.EXTRACTOR_UPDATE_PATH,
         },
     
         JWT: {
