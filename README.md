@@ -25,6 +25,12 @@ EXTRACTOR_UPDATE_PATH=      # "/production/client/current"
 EXTRACTOR_WEBHOOK_URL=      # Discord webhook URL
 EXTRACTOR_WEBHOOK_MESSAGE=  # "<@&848528094918737931>"
 
+EXTRACTOR_IDA_ENABLED=      # boolean
+EXTRACTOR_IDA_AUTH=         # auth string
+EXTRACTOR_IDA_SERVER=       # "http://ida:5000/ida/command"
+EXTRACTOR_IDA_CMD=          # "ida.sh"
+EXTRACTOR_IDA_WORKDIR=      # "/usr/src/ida"
+
 # Traefik
 CF_DNS_API_TOKEN=           # API token with Zone.DNS:Edit permission
 CF_ZONE_API_TOKEN=          # API token with Zone.Zone:Read permission
