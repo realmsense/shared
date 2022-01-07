@@ -34,6 +34,12 @@ export function _GetEnvObject(): IEnvironment {
             SelfBotToken: process.env.RAID_TRACKER_SELFBOT_TOKEN,
         },
 
+        Tracker: {
+            API: parseBool(process.env.TRACKER_API_ENABLED),
+            Realms: parseBool(process.env.TRACKER_REALMS_ENABLED),
+            AdminName: process.env.TRACKER_ADMIN_NAME
+        },
+
         Database: {
             db: {
                 Default  : process.env.DB_DEFAULT,
@@ -95,6 +101,12 @@ export interface IEnvironment {
     RaidTracker: {
         ChannelID: string;
         SelfBotToken: string;
+    }
+
+    Tracker: {
+        API: boolean;
+        Realms: boolean;
+        AdminName: string;
     }
 
     Database: {

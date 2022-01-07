@@ -53,8 +53,14 @@ DISCORD_CLIENTSECRET=       # OAuth2 Client Secret
 DISCORD_REDIRECTURI=        # OAuth2 Redirect URL
 DISCORD_BOT_TOKEN=          # Discord Bot Token
 
-# Raid Tracker
-RAID_TRACKER_SELFBOT_TOKEN= # Self Bot token used o track Discord runs
+# Discord Raid Tracker
+RAID_TRACKER_CHANNEL=       # Announcement channel for Discord runs
+RAID_TRACKER_SELFBOT_TOKEN= # Self Bot token used to track Discord runs
+
+# Nrelay Tracker
+TRACKER_API_ENABLED=        # boolean
+TRACKER_REALMS_ENABLED=     # boolean
+TRACKER_ADMIN_NAME=         # username of player that can send commands to the bots in game
 
 # Database
 DB_DEFAULT=                 # "rs_default"
