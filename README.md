@@ -45,6 +45,7 @@ JWT_EXPIRATION=             # in seconds
 AUTHKEY_REALMS=             # Key for protected routes
 AUTHKEY_PLAYERS=            # Key for protected routes
 AUTHKEY_DISCORD=            # Key for protected routes
+AUTHKEY_LOGS=               # Key for protected routes
 
 # Discord
 DISCORD_INVITE=             # Discord invite link

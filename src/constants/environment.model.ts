@@ -18,7 +18,8 @@ export function _GetEnvObject(): IEnvironment {
         Authkey: {
             Realms: process.env.AUTHKEY_REALMS,
             Players: process.env.AUTHKEY_PLAYERS,
-            Discord: process.env.AUTHKEY_DISCORD
+            Discord: process.env.AUTHKEY_DISCORD,
+            Logs: process.env.AUTHKEY_LOGS
         },
 
         Discord: {
@@ -88,6 +89,7 @@ export interface IEnvironment {
         Realms: string;
         Players: string;
         Discord: string;
+        Logs: string;
     },
 
     Discord: {
