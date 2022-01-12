@@ -9,4 +9,5 @@ export enum Permission {
     // Administration
     MANAGE_BUILDS = "MANAGE_BUILDS",
     MANAGE_USERS = "MANAGE_USERS",
+    ACCESS_LOGS = "ACCESS_LOGS"
 }

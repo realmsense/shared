@@ -1,5 +1,5 @@
 export interface IBotStatus {
-    status: "Ready" | "Waiting" | "Walking" | "Error";
+    status: "Ready" | "Waiting" | "Moving" | "Error";
     guid: string;
     message: string;
     time: Date;
