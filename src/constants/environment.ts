@@ -16,10 +16,9 @@ export const ENV: IEnvironment = {
     },
 
     Authkey: {
-        Realms : process.env.AUTHKEY_REALMS,
-        Players: process.env.AUTHKEY_PLAYERS,
-        Discord: process.env.AUTHKEY_DISCORD,
-        Logs   : process.env.AUTHKEY_LOGS
+        RaidTracker   : process.env.AUTHKEY_RAID_TRACKER,
+        TrackerDiscord: process.env.AUTHKEY_TRACKER_DISCORD,
+        TrackerPlugin : process.env.AUTHKEY_TRACKER_PLUGIN,
     },
 
     Discord: {
@@ -81,10 +80,9 @@ export interface IEnvironment {
     },
 
     Authkey: {
-        Realms : string;
-        Players: string;
-        Discord: string;
-        Logs   : string;
+        TrackerPlugin: string;
+        TrackerDiscord: string;
+        RaidTracker: string;
     },
 
     Discord: {
