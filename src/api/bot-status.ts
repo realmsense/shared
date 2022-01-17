@@ -1,6 +1,6 @@
 export interface IBotStatus {
     status: "Ready" | "Waiting" | "Moving" | "Error";
-    guid: string;
+    name: string;
     message: string;
     time: Date;
 }
